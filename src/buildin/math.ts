@@ -1,4 +1,4 @@
-import { isArray }from 'util/is';
+import { isArray } from '@src/util/is';
 /**
  * 
  * ["abs", "max", "min", "exp", "floor", "random", "log","log1p", "log2", "log10", "pow", "sin", "cos", "tan", "sqrt"
@@ -69,67 +69,67 @@ class MathLibClass implements MathUtils{
 
     abs(a: any): any{
         if(isArray(a))
-            return a.map(e => abs(e));
+            return a.map((e: number) => abs(e));
         return abs(a);
     }
     exp(a: any): any{
         if(isArray(a))
-            return a.map(e => exp(e));
+            return a.map((e: number) => exp(e));
         return exp(a);
     }
     floor(a: any): any{
         if(isArray(a))
-            return a.map(e => floor(e));
+            return a.map((e: number) => floor(e));
         return floor(a);
     }
     ln(a: any): any{
         if(isArray(a))
-            return a.map(e => ln(e));
+            return a.map((e: number) => ln(e));
         return ln(a);
     }
     log2(a: any): any{
         if(isArray(a))
-            return a.map(e => log2(e));
+            return a.map((e: number) => log2(e));
         return log2(a);
     }
     log10(a: any): any{
         if(isArray(a))
-            return a.map(e => log10(e));
+            return a.map((e: number) => log10(e));
         return log10(a);
     }
     ln1plusx(a: any): any{
         if(isArray(a))
-            return a.map(e => ln1plusx(e));
+            return a.map((e: number) => ln1plusx(e));
         return ln1plusx(a);
     }
     sin(a: any): any{
         if(isArray(a))
-            return a.map(e => sin(e));
+            return a.map((e: number) => sin(e));
         return sin(a);
     }
     cos(a: any): any{
         if(isArray(a))
-            return a.map(e => cos(e));
+            return a.map((e: number) => cos(e));
         return cos(a);
     }
     tan(a: any): any{
         if(isArray(a))
-            return a.map(e => tan(e));
+            return a.map((e: number) => tan(e));
         return tan(a);
     }
     pow(a: any, y: number): any{
         if(isArray(a))
-            return a.map(e => pow(e, y));
+            return a.map((e: number) => pow(e, y));
         return pow(a, y);
     }
     cbrt(a: any): any{
         if(isArray(a))
-            return a.map(e => cbrt(e));
+            return a.map((e: number) => cbrt(e));
         return cbrt(a);
     }
     sqrt(a: any): any{
         if(isArray(a))
-            return a.map(e => sqrt(e));
+            return a.map((e: number) => sqrt(e));
         return sqrt(a);
     }
     min(...a: any[]):number{

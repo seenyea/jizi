@@ -1,6 +1,6 @@
 import {
     calc_array_demension
-} from 'util/array/calc';
+} from '@src/util/array/calc';
 
 declare global {
     interface Array<T> {

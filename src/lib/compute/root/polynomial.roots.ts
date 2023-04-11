@@ -1,4 +1,4 @@
-import 'array/ampl/polynomial'
+import '@src/array/ampl/polynomial'
 const abs = Math.abs;
 const pow = Math.pow;
 const DELTA = 1e-5
@@ -9,9 +9,9 @@ export const polynomialRoots = (coffs: number[]): number[] => {
     let c = coffs.map(e => e);
 
     const detect = (function(c){
-        const cfs = c.map(e => e);
-        return function (r) {
-            return cfs.map((e , i) => e * pow(r, i)).reduce((a, b) => a + b, 0)
+        const cfs = c.map((e: number) => e);
+        return function (r: any) {
+            return cfs.map((e: number , i) => e * pow(r, i)).reduce((a: number, b: number) => a + b, 0)
         }
     })(c);
 
