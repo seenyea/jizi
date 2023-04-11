@@ -1,0 +1,32 @@
+{
+  "name": "JIZI",
+  "version": "1.0.0",
+  "description": "a math lib for data analysis",
+  "main": "ls",
+  "type": "module",
+  "scripts": {
+    "demo": "webpack --config ./build/example.js",
+    "test.init": "jest --init",
+    "test": "jest"
+  },
+  "author": "Seenyea(Chinese)",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.7.5",
+    "@babel/preset-env": "^7.7.6",
+    "@babel/preset-typescript": "^7.7.4",
+    "babel-jest": "^24.9.0",
+    "lodash": "^4.17.15"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "@types/lodash": "^4.14.149",
+    "jest": "^24.9.0",
+    "mocha": "^7.0.0",
+    "ts-jest": "^29.1.0",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.3",
+    "webpack": "^4.41.3",
+    "webpack-cli": "^3.3.10"
+  }
+}
